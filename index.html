@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JP2AUTO - Assistência Técnica | Portal Interno</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Opcional: Link para uma fonte do Google Fonts para um visual mais moderno -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="main-header">
+        <div class="header-content">
+            <img src="img/jp2auto_logo.png" alt="Logo JP2AUTO" class="header-logo">
+            <nav class="main-nav">
+                <a href="Book.html" class="nav-link">👤 Administrativo</a>
+                <a href="astecnica.html" class="nav-link">🛠 Assistência Técnica</a>
+                <a href="astecnica.html" class="nav-link">📁 Documentos</a>
+                <a href="#sugestoes" class="nav-link">💼 Comercial</a>
+            </nav>
+            <button class="admin-button" onclick="window.location.href='login.html'">Área do Administrador</button>
+        </div>
+    </header>
+    
+    <main class="main-container">
+        <section class="hero-section">
+            <h1>Bem-vindo ao Portal Interno JP2AUTO</h1>
+            <p>Seu centro de recursos JP2AUTO.</p>
+        </section>
+
+        <section id="defeitos" class="content-card">
+            <h2 class="card-title">Avisos</h2>
+            <h1>Avisos semanais </h1>
+            <a href="Book.html" class="view-all-button">Ver Aviso Completo</a>
+        </section>
+
+        <section id="manuais" class="content-card">
+            <h2 class="card-title">Em Processo</h2>
+            <p>Acesse nossa biblioteca completa de manuais para auxiliar na instalação e resolução de problemas.</p>
+            <ul class="manual-list">
+                <li><a href="manuais/manual-exemplo.pdf" target="_blank" class="manual-link">Manual Exemplo (PDF)</a></li>
+                <!-- Adicionar mais links para manuais aqui -->
+            </ul>
+            <a href="manuais.html" class="view-all-button">Ver Todos os Manuais</a>
+        </section>
+
+        <section id="mensagens" class="content-card">
+            <h2 class="card-title">Recursos Humanos</h2>
+            <p>Solicitações de férias, folha de pagamento, benefícios e documentos dos colaboradores.</p>
+            <a href="pop.html" class="view-all-button">ABRIR RH</a>
+        </section>
+
+        <section id="sugestoes" class="content-card">
+            <h2 class="card-title">Sugestões de Melhoria</h2>
+            <p>Sua opinião é muito importante para nós! Deixe sua sugestão para melhorarmos nossos serviços.</p>
+            <form onsubmit="adicionarSugestao(event)" class="suggestion-form">
+                <textarea id="sugestao" placeholder="Digite sua sugestão aqui..." required rows="3"></textarea>
+                <button type="submit" class="submit-button">Enviar Sugestão</button>
+            </form>
+            <ul id="lista-sugestoes" class="suggestion-list">
+                <!-- Sugestões adicionadas dinamicamente via JS -->
+            </ul>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 JP2AUTO - Todos os direitos reservados. V0.1</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JP2AUTO - Assistência Técnica | Portal Interno</title>
+    <link rel="stylesheet" href="styles astecnica.css">
+    <!-- Opcional: Link para uma fonte do Google Fonts para um visual mais moderno -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="header-content">
+            <img src="img/jp2auto_logo.png" alt="Logo JP2AUTO" href="index.html" class="header-logo">
+            <nav class="main-nav">
+                <a href="Book.html" class="nav-link">👤 Administrativo</a>
+                <a href="astecnica.html" class="nav-link">🛠 Assistência Técnica</a>
+                <a href="astecnica.html" class="nav-link">📁 Documentos</a>
+                <a href="#sugestoes" class="nav-link">💼 Comercial</a>
+            </nav>
+            <button class="admin-button" onclick="window.location.href='login.html'">Área do Administrador</button>
+            <button class="admin-button" onclick="window.location.href='index.html'">Voltar</button>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section class="hero-section">
+            <h1>Bem-vindo ao Portal Assistência Técnica</h1>
+            <p>
+                Custos – Garantia (23/06 - 27/06) Substituição: R$ 119,92 Crédito: R$ 379,00
+                Total: <span style="color: #facc15;">R$ 498,92</span>
+            </p>
+        </section>
+
+        <section id="defeitos" class="content-card">
+            <h2 class="card-title">Book de Produtos</h2>
+
+            <input type="text" id="busca-defeito" placeholder="Buscar defeito por nome ou descrição..."
+                onkeyup="buscarDefeito()">
+            <div id="lista-defeitos">
+                <div class="defeito">Lanterna não acende ao ligar farol</div>
+                <div class="defeito">Fita LED com falha intermitente</div>
+                <div class="defeito">Driver aquece além do normal</div>
+                <div class="defeito">Seta sequencial não ativa</div>
+                <!-- Mais defeitos podem ser adicionados dinamicamente via JS ou diretamente aqui -->
+            </div>
+            <button class="view-all-button" onclick="window.location.href='Book.html'">Ver Book Completo</button>
+
+        </section>
+
+
+        <section id="manuais" class="content-card">
+            <h2 class="card-title">Trello</h2>
+            <p>Quadro de controle dos atendimentos e protocolos técnicos.</p>
+            <a href="https://trello.com/b/mzGKP0aQ/suporte-tecnico-jp2auto?completedInviteSignup=1" target="_blank"
+                class="view-all-button">
+                Abrir Trello
+            </a>
+        </section>
+
+        <section id="mensagens" class="content-card">
+            <h2 class="card-title">Digisac</h2>
+            <p>Central de atendimento e comunicação via WhatsApp e outros canais.</p>
+            <a href="https://jp2comercio.digisac.me/" target="_blank" class="view-all-button">
+                Abrir Digisac
+            </a>
+        </section>
+
+        <section id="sugestoes" class="content-card">
+            <h2 class="card-title">Sugestões de Melhoria</h2>
+            <p>Sua opinião é muito importante para nós! Deixe sua sugestão para melhorarmos nossos serviços.</p>
+            <form onsubmit="adicionarSugestao(event)" class="suggestion-form">
+                <textarea id="sugestao" placeholder="Digite sua sugestão aqui..." required rows="3"></textarea>
+                <button type="submit" class="submit-button">Enviar Sugestão</button>
+            </form>
+            <ul id="lista-sugestoes" class="suggestion-list">
+                <!-- Sugestões adicionadas dinamicamente via JS -->
+            </ul>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 JP2AUTO - Todos os direitos reservados. V0.1</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JP2AUTO - ASSISTENCIA TÉCNICA</title>
+    <link rel="stylesheet" href="styles pop.css">
+</head>
+
+<body>
+
+    <header class="meu-header">
+        <img alt="" src="img/jp2auto_logo.png">
+        <button class="botao-topo-direita" href="astecnica.html">Sair</button>
+
+        <h1 class="jp2auto">JP2AUTO</h1>
+        <nav>
+            <a class="destaque-hover" href="Book.html">Book</a>
+            <a class="destaque-hover" href="manuais.html">Manuais</a>
+            <a class="destaque-hover" href="#sugestoes">Sugestões</a>
+        </nav>
+    </header>
+
+    <div class="caixa-flutuante" id="caixa" style="display: none;">
+        <div class="barra-superior" id="barra">
+            <strong>Planilha</strong>
+            <div>
+                <button class="botao" id="fixarBtn">Fixar</button>
+                <button class="botao" id="fecharBtn">X</button>
+            </div>
+        </div>
+
+        <table class="tabela-planilha">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Produto</th>
+                    <th>Data</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rafael</td>
+                    <td>Lanterna LED</td>
+                    <td>2025-06-30</td>
+                </tr>
+                <tr>
+                    <td>João</td>
+                    <td>Fita RGB</td>
+                    <td>2025-06-29</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<main class="container">
+    <div class="card" data-doc-id="1bpu2qTakciBWqBs2TUjFDAxu132CgRoK">
+    <h2>SUBPROCESSO RECEBIMENTO DE GARANTIA</h2>
+    <p>Clique para abrir o documento completo</p>
+  </div>
+
+  <div class="card" data-doc-id="1SDnxadXKAqKTfJLRf7CSuOTras_AW62O">
+    <h2>SUBPROCESSO RECEBIMENTO DE GARANTIA</h2>
+    <p>Clique para abrir o documento completo</p>
+  </div>
+
+  <div class="card" data-doc-id="1klqS0YNmyXGSmD0O-YK0zsLwHm58wZWL">
+    <h2>SUBPROCESSO RESOLUÇÃO DE GARANTIA</h2>
+    <p>Clique para abrir o documento completo</p>
+  </div>
+
+  <div class="card" data-doc-id="1wyta6YlAGgu4D4tPqpsOVz4Y29HWLZ15">
+    <h2>SUBPROCESSO AVALIAÇÃO DE GARANTIA</h2>
+    <p>Clique para abrir o documento completo</p>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <button id="btn-fechar" class="btn-fechar" title="Fechar modal">X</button>
+      <iframe id="iframe-doc" src="" allowfullscreen></iframe>
+    </div>
+  </div>
+</main>
+<script src="script pop.js"></script>
+</body>
+
+</html>

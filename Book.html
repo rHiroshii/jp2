@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JP2AUTO - ASSISTENCIA TÉCNICA</title>
+    <link rel="stylesheet" href="styles book.css">
+</head>
+<body>
+    <header>
+        <img alt="" src="img/jp2auto_logo.png">
+        <h1>JP2AUTO - ASSISTENCIA TÉCNICA</h1> 
+        <nav>
+            <a href="#defeitos">Book de Defeitos</a>
+            <a href="manuais.html">Manuais</a>
+            <a href="#mensagens">Mensagens</a>
+            <a href="#sugestoes">Sugestões</a>
+        </nav>
+    </header>
+    <main>
+<h2>Book de Defeitos</h2>
+ <section class="defeitos">
+             <input type="text" id="busca-defeito" placeholder="Buscar defeito por nome ou descrição..." onkeyup="buscarDefeito()">
+        </section>
+
+        <section class="listdefeitos">
+
+            <div id="lista-defeitos">
+                <div class="defeito">JP2AUTO 
+                    <iframe src="https://docs.google.com/document/d/1m0avKP6vV8_4nhd83TUXjKWNkHcIY-pR/preview"
+        width="100%"
+        height="600"
+        frameborder="0"
+        style="border: 1px solid #ecbd27; border-radius: 8px;">
+</iframe>
+                </div>
+                <div class="defeito">Fita LED com falha intermitente</div>
+                <div class="defeito">Driver aquece além do normal</div>
+                <div class="defeito">Seta sequencial não ativa</div>
+            </div>
+        </section>
+        
+       
+    </main>
+    <script src="script book.js"></script>
+</body>
+<div>
+ <section id="sugestoes">
+            <h2>Sugestões de Melhoria</h2>
+            <form onsubmit="adicionarSugestao(event)">
+                <input  class="caixa-branco-preto" type="text" id="sugestao" placeholder="Digite sua sugestão" required>
+                <button  class="botao-branco-preto" type="submit">Enviar</button>
+            </form>
+            <ul id="lista-sugestoes"></ul>
+        </section>
+        <footer footer class="rodape">© 2025 Sua Empresa - Todos os direitos reservados</footer>
+  
+</div>   
+</html>
+
+
+

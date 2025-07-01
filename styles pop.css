@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+}
+
+.meu-header {
+    position: relative; /* Necessário para o posicionamento interno do botão */
+    height: 80px;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.caixa-flutuante {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    width: 400px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 9999;
+    padding: 15px;
+    resize: both;
+    overflow: auto;
+    transition: all 0.3s ease;
+}
+
+.barra-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: move;
+}
+
+.botao {
+    background: #eee;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background: #ddd;
+}
+
+.tabela-planilha {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.tabela-planilha th,
+.tabela-planilha td {
+    border: 1px solid #ccc;
+    padding: 6px;
+    text-align: left;
+}
+
+.botao-topo-direita {
+    position: absolute;
+    top: 15px; /* Ajuste conforme a altura do header */
+    right: 20px;
+    padding: 8px 16px;
+    background-color: #ecbd27;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.destaque-hover {
+    color: white; /* cor padrão */
+    transition: color 0.3s ease; /* transição suave */
+}
+
+.destaque-hover:hover {
+    color: #ecbd27; /* amarelo no hover */
+}
+
+.botao-topo-direita:hover {
+    background-color: #d4a319;
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.card {
+  padding: 20px;
+  width: 320px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+  user-select: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Modal */
+.modal {
+  display: none; /* Escondido inicialmente */
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal-content {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.modal-content iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.btn-fechar {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #f44336;
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 5px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 10;
+}

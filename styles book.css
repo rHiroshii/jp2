@@ -1,0 +1,139 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #ecbd27;
+}
+header {
+    background-color: #131008;
+    color: white;
+    padding: 1rem;
+    text-align: left;
+}
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+main {
+    padding: 1rem;
+    background-color: #ffffff;
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    text-align: center;
+}
+section.defeitos {
+    margin-bottom: 2rem;
+    background: #ffffff;
+    padding: 1rem;
+
+    /* borda arredondada, ajuste o valor para aumentar/diminuir o arredondamento */
+    border-radius: 1px; /* Exemplo: 8px, pode ser 50% para bordas circulares */
+
+    /* borda com espessura e cor */
+    border: 1px solid #ecbd27; /* Aumente/decrease o '2px' para mudar a espessura */
+    width: 200px;   /* largura fixa */
+    height: 30px;
+}
+section.listdefeitos {
+    
+    margin-bottom: 2rem;
+    background: #ffffff;
+    padding: 1rem;
+
+    /* borda arredondada, ajuste o valor para aumentar/diminuir o arredondamento */
+    border-radius: 1px; /* Exemplo: 8px, pode ser 50% para bordas circulares */
+
+    /* borda com espessura e cor */
+    border: 1px solid #ecbd27; /* Aumente/decrease o '2px' para mudar a espessura */
+    width: 1000px;   /* largura fixa */
+    height: 600px;
+}
+section {
+    
+    margin-bottom: 2rem;
+    background: #ecbd27;
+    padding: 1rem;
+
+    /* borda arredondada, ajuste o valor para aumentar/diminuir o arredondamento */
+    border-radius: 1px; /* Exemplo: 8px, pode ser 50% para bordas circulares */
+
+    /* borda com espessura e cor */
+    border: 1px solid #ecbd27; /* Aumente/decrease o '2px' para mudar a espessura */
+    width: 400px;   /* largura fixa */
+    height: 100px;
+}
+.login-container {
+    max-width: 300px;
+    margin: 100px auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.login-container input {
+    width: 90%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+.login-container button {
+    padding: 0.5rem 1rem;
+}
+.erro {
+    color: red;
+}
+.rodape {
+  background-color: #ecbd27;
+  color: rgb(14, 14, 14);
+  padding: 2px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+.botao-branco-preto {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.botao-branco-preto:hover {
+  background-color: black;
+  color: white;
+  border-color: black;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+.caixa-branco-preto {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  outline: none;
+  width: 250px;
+  box-sizing: border-box;
+}
+
+.caixa-branco-preto:focus {
+  border-color: black;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}

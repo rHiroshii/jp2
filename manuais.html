@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JP2AUTO - ASSISTENCIA TÉCNICA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img alt="" src="img/jp2auto_logo.png">
+        <h1>JP2AUTO - ASSISTENCIA TÉCNICA</h1> 
+        <nav>
+            <a href="#defeitos">Book de Defeitos</a>
+            <a href="manuais.html">Manuais</a>
+            <a href="#mensagens">Mensagens</a>
+            <a href="#sugestoes">Sugestões</a>
+        </nav>
+    </header>
+    <main>
+        <section id="defeitos">
+            <h2>Book de Defeitos</h2>
+            <input type="text" id="busca-defeito" placeholder="Buscar defeito por nome ou descrição..." onkeyup="buscarDefeito()">
+            <div id="lista-defeitos">
+                <div class="defeito">Lanterna não acende ao ligar farol</div>
+                <div class="defeito">Fita LED com falha intermitente</div>
+                <div class="defeito">Driver aquece além do normal</div>
+                <div class="defeito">Seta sequencial não ativa</div>
+            </div>
+        </section>
+        <section id="manuais">
+            <h2>Manuais de Instalação</h2>
+            <ul>
+                <li><a href="manuais/manual-exemplo.pdf" target="_blank">Manual Exemplo</a></li>
+            </ul>
+        </section>
+        <section id="mensagens">
+            <h2>Mensagens Automáticas</h2>
+            <button onclick="copiarMensagem('mensagem1')">Copiar mensagem de protocolo</button>
+            <p id="mensagem1" style="display:none;">Seu protocolo foi aberto. Em breve daremos retorno.</p>
+        </section>
+        <section id="sugestoes">
+            <h2>Sugestões de Melhoria</h2>
+            <form onsubmit="adicionarSugestao(event)">
+                <input type="text" id="sugestao" placeholder="Digite sua sugestão" required>
+                <button type="submit">Enviar</button>
+            </form>
+            <ul id="lista-sugestoes"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
